@@ -121,6 +121,7 @@ a {
 .header-link:focus {
   color: var(--accent-color);
 }
+
 .header-link.current {
   color: var(--accent-color);
 }
@@ -145,7 +146,6 @@ a {
 .header-adress-list:focus {
   color: var(--accent-color);
 }
-
 /* ---------------------------------------Студия----------------------------------------------------- */
 /* Блок Герой */
 .hero {
