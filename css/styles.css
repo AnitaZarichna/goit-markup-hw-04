@@ -387,8 +387,8 @@ a {
   text-align: center;
   justify-content: center;
 }
-.clients-li > a {
-  display: block;
+.clients-link {
+  display: flex;
   align-items: center;
   text-align: center;
   width: 170px;
@@ -399,8 +399,8 @@ a {
   color: var(--social-link);
   fill: currentColor;
 }
-.clients-li > a:hover,
-.clients-li > a:focus {
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
@@ -453,10 +453,7 @@ a {
 .portfolio-card-li:nth-child(3n) {
   margin-right: 0;
 }
-.portfolio-card-li:hover,
-.portfolio-card-li:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 .portfolio-list {
   display: block;
   font-weight: 700;
@@ -466,6 +463,10 @@ a {
   color: var(--title-text-color);
   text-decoration: none;
   background-color: var(--card-background);
+}
+.portfolio-list:hover,
+.portfolio-list:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .card-text {
   padding: 24px 20px;
@@ -536,6 +537,7 @@ a {
   line-height: 1.1428;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 20px;
 
   color: var(--footer-logo-color);
 }
@@ -544,7 +546,6 @@ a {
 }
 .footer-social-list {
   display: flex;
-  margin-top: 20px;
 }
 .footer-social-li:not(:last-child) {
   margin-right: 10px;
